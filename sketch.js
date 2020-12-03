@@ -9,7 +9,7 @@ var backgroundImg,platform;
 var bird, slingshot;
 var birds=[];
 var gameState = "onSling";
-var bg = "sprites/bg1.png";
+var bg = "bg1.png";
 var score = 0;
 var bird_select;
 var pig_snort;
@@ -17,9 +17,9 @@ var bird_flying;
 
 function preload() {
     getBackgroundImg();
-   bird_select=loadSound("sounds/bird_select.mp3");
-   bird_flying=loadSound("sounds/bird_flying.mp3");
-  pig_snort=loadSound("sounds/pig_snort.mp3");  
+   bird_select=loadSound("bird_select.mp3");
+   bird_flying=loadSound(" bird_flying.mp3");
+  pig_snort=loadSound("pig_snort.mp3");  
 }
 
 function setup(){
@@ -137,10 +137,10 @@ async function getBackgroundImg(){
     var hour = datetime.slice(11,13);
     
     if(hour>=06 && hour<=19){
-        bg = "sprites/bg1.png";
+        bg = "bg1.png";
     }
     else{
-        bg = "sprites/bg2.jpg";
+        bg = "bg2.jpg";
     }
 
     backgroundImg = loadImage(bg);
